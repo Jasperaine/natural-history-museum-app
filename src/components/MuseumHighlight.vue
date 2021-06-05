@@ -20,7 +20,12 @@
                 <h4 class="info-container__news-title">News</h4>
                 <p class="info-container__news-description">{{ news }}</p>
             </div>
-            <a v-if="highlight.quiz" :href="highlight.quiz" class="info-container__quiz-link">
+            <a
+                v-if="highlight.quiz"
+                :href="highlight.quiz"
+                target="_blank"
+                class="info-container__quiz-link"
+            >
                 <VueFontawesome
                     icon="question-circle"
                     size="1.1"
